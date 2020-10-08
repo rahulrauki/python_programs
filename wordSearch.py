@@ -1,4 +1,4 @@
-fhand=open("words.txt")
+fhand=open("words.txt") #this dictionary file is available in the the same repository, edit/add words as you like
 def toString(lis):
     return ''.join(lis)
 perms=[]
