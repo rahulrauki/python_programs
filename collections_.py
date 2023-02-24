@@ -36,4 +36,10 @@ dq.appendleft(5) # [5,1,2,3,4]
 print(dq)
 dq.pop() # [5,1,2,3]
 dq.popleft() # [1,2,3]
+# list functions can also be used
+dq.clear()
+dq.extend([1, 2, 3, 4, 5])
+dq.extendleft([6, 7, 8, 9, 0]) # [0, 9, 8, 7, 6, 1, 2, 3, 4, 5]
+dq.rotate(1) # shifts elements to right by given number of indexes
+dq.rotate(-2) # shifts elements to left by given number of indexes
 print(dq)
