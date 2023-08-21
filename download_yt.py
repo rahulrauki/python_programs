@@ -10,8 +10,8 @@ def main():
     file_path = args.input
     link_list = extract_links(file_path, output=False)
     success, length = 0, len(link_list)
-    if args.limit < length:
-        length = args.limit
+    if int(args.limit) < length:
+        length = int(args.limit)
     for link in link_list[:length]:
         try:
             print(f"Starting to download : {link}")
